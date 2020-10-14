@@ -1,0 +1,19 @@
+{
+  "name": "2020f-vno-lecture-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ws -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/devbridge-sourcery/2020f-vno-lecture-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "local-web-server": "^4.2.1"
+  }
+}
