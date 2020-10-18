@@ -2,6 +2,10 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+input::placeholder {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 ul {
   padding-left: 0;
 }
@@ -20,6 +24,7 @@ button {
   border-radius: 4px;
   color: #555;
   font-family: 'Courier New', Courier, monospace;
+  display: inline;
 }
 
 .content-wrapper {
@@ -37,8 +42,42 @@ button {
   justify-content: space-between;
   border: 2px solid black;
   padding: 8px;
+  border-radius: 10px;
 }
 
 .todo-item:not(:last-child) {
   margin-bottom: 4px;
+}
+
+.delete:hover {
+  color: red;
+}
+
+.complete:hover {
+  color: green;
+}
+
+.submit:hover {
+  color: blue;
+}
+
+.revert:hover{
+  color: rgb(163, 30, 163)
+}
+
+.add-todo-form {
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-todo-form input {
+  flex-grow: 1;
+}
+.add-todo-form button {
+  margin-left: 10px;
+}
+
+.completedTodo {
+  background-color: rgb(124, 123, 123);
 }

@@ -4,6 +4,7 @@
     <title>Todo List</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    
   </head>
   <body>
     <header>
@@ -11,14 +12,15 @@
     </header>
     <main class="content-wrapper">
       <ul class="todo-list">
-        <li class="todo-item">Create page structure <button>Complete</button></li>
-        <li class="todo-item">Add some style <button>Complete</button></li>
-        <li class="todo-item">Add dynamic functionality <button>Complete</button></li>
+        <li class="todo-item">Create page structure <div class="buttons"><button class="complete" id="complete">Complete</button> <button class="delete">Delete</button></div></li>
+        <li class="todo-item">Add some style <div class="buttons"><button class="complete" id="complete">Complete</button> <button class="delete">Delete</button></div></li>
+        <li class="todo-item">Add dynamic functionality <div class="buttons"><button class="complete" id="complete">Complete</button> <button class="delete">Delete</button></div></li>
       </ul>
       <form class="add-todo-form">
         <input type="text" placeholder="What needs to be done?">
-        <button type="submit">Add todo</button>
+        <button type="submit" class="submit">Add todo</button>
       </form>
     </main>
+    <script src="scripts.js"></script>
   </body>
 </html>
